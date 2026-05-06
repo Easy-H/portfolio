@@ -1,5 +1,6 @@
 ---
-title: about_main
+title: 소개
+image: myicon.png
 ---
 안녕하세요.
 **게임 프로그래머** 지망생 **이지헌** 입니다.
