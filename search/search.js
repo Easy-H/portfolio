@@ -15,30 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const renderResults = (data) => {
+        const template = document.getElementById('portfolio-card-template').innerHTML;
+
         if (data.length > 0) {
             statusContainer.innerHTML = '';
             resultsContainer.innerHTML = data.map(item => `
-                <div class="portfolio-flex-item portfolio-item" style="opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">
-                    <a href="${item.url}" title="${item.summary || ''}" class="portfolio-link">
-                        <div class="portfolio-inner">
-                            <div class="box-modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-1.5x"></i>
-                                    </div>
-                                </div>
-                                <img src="${item.thumbnail || ''}" class="img-modal" alt="${item.title}">
-                            </div>
-                        </div>
-                        <p class="portfolio-txt">${item.title}</p>
-                    </a>
-                </div>
+                ${template.replace(/{url}/g, item.url)
+                          .replace(/{summary}/g, item.summary || '')
+                          .replace(/{thumbnail}/g, item.thumbnail || '')
+                          .replace(/{title}/g, item.title)}
             `).join('');
 
             // 애니메이션 효과 적용
             setTimeout(() => {
                 const items = resultsContainer.querySelectorAll('.portfolio-item');
                 items.forEach((item, index) => {
+                    item.style.cssText = "opacity: 0; transform: translateY(20px); transition: all 0.5s ease;";
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'translateY(0)';
