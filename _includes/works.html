@@ -15,6 +15,7 @@
     {% endif %}
 
     {% assign thumb_path = post.thumbnail | prepend: "/img/portfolio/" | relative_url %}
+    {% assign post_url = post.url | relative_url %}
     {% include portfolio_card.html 
         url=post.url 
         summary=post.summary 
