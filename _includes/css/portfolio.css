@@ -20,7 +20,6 @@
 
   .portfolio-wrapper > div > * {
     max-height: 80vh;
-    flex: 1;
     border-radius: 16px;
   }
 
