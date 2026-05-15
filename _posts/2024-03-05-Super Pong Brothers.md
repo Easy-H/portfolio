@@ -3,7 +3,7 @@ layout: portfolio_with_preview
 tags: [개인 프로젝트, 게임]
 thumbnail: SuperPongBros.png
 summary:  "🔧 Unity | Firebase&#10;🌟 벽돌깨기, 슈팅&#10;🎮 상태: 완료"
-preview: <iframe frameborder="0" src="https://itch.io/embed-upload/15313913?color=333333" allowfullscreen="" width="260" height="580"><a href="https://easy-h.itch.io/superpongbros">Play Super Pong Brosthers on itch.io</a></iframe>
+preview: '<iframe frameborder="0" src="https://itch.io/embed-upload/15313913?color=333333" allowfullscreen="" style="aspect-ratio: 0.45"><a href="https://easy-h.itch.io/superpongbros">Play Super Pong Brosthers on itch.io</a></iframe>'
 social:
     - title: github
       info: Code

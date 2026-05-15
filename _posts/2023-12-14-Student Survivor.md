@@ -2,7 +2,7 @@
 layout: portfolio_with_preview
 tags: [참여 프로젝트, 게임]
 thumbnail: StudentSurvivor.jpg
-preview: '<iframe frameborder="0" src="https://itch.io/embed-upload/9246182" allow="autoplay; fullscreen" style="width: 600px; height: 900px; transform: scale(0.5) translateX(-50%); /* 300/1980 */ transform-origin: top left; border: none;"><a href="https://rlatldnd1.itch.io/student-survivor">Play Student Survivor on itch.io</a></iframe>'
+preview: '<div style="height: 80vh; display: flex; justify-content: center; align-items: center; overflow: hidden; /* min-width: 80vh; */ position: relative; background-color: black;"><iframe frameborder="0" src="https://itch.io/embed-upload/9246182" allow="autoplay; fullscreen" style="width: 600px; height: 900px; border: none; display: block; transform-origin: center; transform: scale(calc(80vh / 900px)); position: absolute;"></iframe><div style="width: calc(500px * (80vh / 900px)); height: 80vh;"></div>'
 social:
   - title: github
     url: https://github.com/asdf-1256/Student_Survivor
@@ -54,6 +54,6 @@ social:
 	- 데이터 수정, 생성의 용의성 확보
 
 <!-- card: 🛠️ 주요 기능 및 기여 -->
-## 🎨 UI 시스템 구현
+### 🎨 UI 시스템 구현
 - 싱글톤 패턴을 이용한 UI 시스템 구현
 	- UI에 대해 일관된 접근 포인트 제공
