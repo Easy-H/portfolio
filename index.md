@@ -28,7 +28,7 @@ navigation:
 <!-- 자기소개 섹션 -->
 <section id="about" class="section">
   <div class="container">
-    {% include about.html %}
+    {% include about.html image_pos="right" %}
   </div>
 </section>
 
